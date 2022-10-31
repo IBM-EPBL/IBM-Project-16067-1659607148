@@ -1,0 +1,12 @@
+body {
+    display: -webkit-flex;
+    background-color: lightblue;
+  
+    display: flex;
+  }
+  
+  li {
+    padding: 10px;
+    display: inline-block;
+  }
+  

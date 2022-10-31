@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hospital</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/test-bucket-assignment3/helper.css" /> -->
+    <link rel="stylesheet" type="text/css" href="helper.css" />
+  </head>
+
+  <section id="title">
+  <body style="background-image: url('http://s3.jp-tok.cloud-object-storage.appdomain.cloud/test-bucket-assignment3/hospital-building.jpg'); background-repeat: no-repeat;background-size: cover;">
+    <h1>Welcome to Hospital</h1>
+
+    </section>
+
+    
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "031ef5ce-2426-4f2f-ac6e-e7b89d8ac264", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "44c059ab-6d83-4d87-bc1f-99e3331c7d1a", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+
+    <script src="" async defer></script>
+  </body>
+</html>
