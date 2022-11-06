@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link
+      rel="stylesheet"
+      href="http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibm-assignment-03/sample1.css"
+    />
+  </head>
+  <body>
+    <ol id="populate"></ol>
+    <script>
+      var list = ["img1", "img2", "img3", "img4", "img5"];
+      var url =
+        "http://s3.jp-tok.cloud-object-storage.appdomain.cloud/ibm-assignment-03/";
+      var arrayLength = list.length;
+      var UL = document.getElementById("populate");
+      for (var i = 0; i < arrayLength; i++) {
+        var li = document.createElement("li");
+        var img = document.createElement("img");
+        img.setAttribute("src", url + list[i] + ".jpg");
+        img.setAttribute("width", "200");
+        img.setAttribute("height", "200");
+        li.appendChild(img);
+        UL.appendChild(li);
+      }
+    </script>
+  </body>
+</html>
